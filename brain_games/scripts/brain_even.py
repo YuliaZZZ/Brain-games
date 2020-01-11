@@ -14,14 +14,14 @@ def even():
     i = 1
     while i <= 3:
         print("""Question: {}
-        Your answer: """.format(di.get(i)), end='')
+Your answer: """.format(di.get(i)), end='')
         answer = input()
         if answer == is_even(di.get(i)):
             count +=1
             print('Correct!')
         else:
-            print("'yes' is wrong answer :(.Correct answer was
-            'no'.\nLet's try again, Bill!")
+            print("""'yes' is wrong answer :(. Correct answer was 'no'.
+Let's try again, Bill!""")
             break
         i += 1
     if count == 3:
