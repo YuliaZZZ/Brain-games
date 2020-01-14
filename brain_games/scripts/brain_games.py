@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
-from brain_games.cli import run
 
 
 def greeting():
     print('Welcome to the Brain Games!')
+
+
+def welcome_even():
     print('Answer "yes" if number even otherwise answer "no".')
+    print('')
+
+
+def welcome_calc():
+    print('What is the result of the expression?')
     print('')
 
 
 def main():
     greeting()
-    run()
+    welcome_even()
+
 
 
 if __name__ == '__main__':
