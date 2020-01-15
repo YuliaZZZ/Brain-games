@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-from brain_games.cli import named
 import random
 
 
-def even():
+def even(x):
     def is_even(x):
         return 'yes' if x % 2 == 0 else 'no'
     di = {
@@ -22,9 +21,9 @@ Your answer: """.format(di.get(i)), end='')
             print('Correct!')
         else:
             print("""'yes' is wrong answer :(. Correct answer was 'no'.
-Let's try again, {}!""".format(named))
+Let's try again, {}!""".format(x))
             break
         i += 1
     if count == 3:
-        print('Congratulations, {}!'.format(named), end='')
+        print('Congratulations, {}!'.format(x))
         print('')

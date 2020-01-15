@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.cli import named
 import random
 from operator import sub, mul
 
 
-def calc():
+def calc(x):
     di = {
        1: [random.randint(1, 10), random.randint(1, 10)],
        2: [random.randint(1, 10), random.randint(1, 10)],
@@ -28,8 +27,9 @@ Your answer: """.format(v), end='')
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}""".format(answer, operation[v], named))
+Let's try again, {}""".format(answer, operation[v], x))
             break
         i += 1
     if count == 3:
-        print('Congratulations, {}'.format(named), end='')
+        print('Congratulations, {}'.format(x))
+        print('')

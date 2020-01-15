@@ -7,8 +7,8 @@ from brain_games.games.even import even
 def main():
     greeting()
     welcome_even()
-    run()
-    even()
+    name = run()
+    even(name)
 
 
 if __name__ == '__main__':

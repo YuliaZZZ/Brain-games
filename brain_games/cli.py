@@ -9,9 +9,6 @@ def run():
     return name
 
 
-named = run()
-
-
 def main():
     run()
 
