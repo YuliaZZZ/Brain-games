@@ -31,5 +31,5 @@ Let's try again, {}""".format(answer, operation[v], x))
             break
         i += 1
     if count == 3:
-        print('Congratulations, {}'.format(x))
+        print('Congratulations, {}!'.format(x))
         print('')
