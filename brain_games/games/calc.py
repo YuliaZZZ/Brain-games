@@ -27,7 +27,7 @@ Your answer: """.format(v), end='')
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}""".format(answer, operation[v], x))
+Let's try again, {}!""".format(answer, operation[v], x))
             break
         i += 1
     if count == 3:
