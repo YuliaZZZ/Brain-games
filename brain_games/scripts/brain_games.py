@@ -15,6 +15,11 @@ def welcome_calc():
     print('')
 
 
+def welcome_gcd():
+    print('Find the greatest common divisor of given numbers.')
+    print('')
+
+
 def main():
     greeting()
     welcome_even()
