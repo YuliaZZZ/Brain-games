@@ -20,6 +20,11 @@ def welcome_gcd():
     print('')
 
 
+def welcome_progres():
+    print('What number is missing in the progression?')
+    print('')
+
+
 def main():
     greeting()
     welcome_even()
