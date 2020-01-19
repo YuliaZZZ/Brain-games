@@ -6,5 +6,5 @@
 <a href="https://asciinema.org/a/294640"><img src="https://asciinema.org/a/lZmJKg3TT3BWqohxSOYhMjJvH.png" width="336"/></a>
 <a href="https://asciinema.org/a/294641?theme=tango"><img src="https://asciinema.org/a/lZmJKg3TT3BWqohxSOYhMjJvH.png" width="336"/></a>
 <a href="https://asciinema.org/a/294642?theme=tango"><img src="https://asciinema.org/a/lZmJKg3TT3BWqohxSOYhMjJvH.png" width="336"/></a>
-<a href="?theme=tango"><img src="https://asciinema.org/a/lZmJKg3TT3BWqohxSOYhMjJvH.png" width="336"/></a>
+<a href="https://asciinema.org/a/294643?theme=tango"><img src="https://asciinema.org/a/lZmJKg3TT3BWqohxSOYhMjJvH.png" width="336"/></a>
 <a href="https://asciinema.org/a/294636?theme=tango"><img src="https://asciinema.org/a/lZmJKg3TT3BWqohxSOYhMjJvH.png" width="336"/></a>
