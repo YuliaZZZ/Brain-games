@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 from itertools import islice, count
+import prompt
 
 
 def make_progression():
@@ -22,8 +23,7 @@ def progres(name):
     while i <= 3:
         print("Question: ", end='')
         question = make_progression()
-        print('Your answer: ', end='')
-        answer = input()
+        answer = prompt.string('Your answer: ')
         if answer == question:
             counter += 1
             print('Correct!')

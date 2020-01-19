@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import random
 from operator import sub, mul
+import prompt
 
 
 def calc(x):
@@ -19,9 +20,8 @@ def calc(x):
                   '{} * {}'.format(di[i][0], di[i][1]): mul(di[i][0], di[i][1])
                   }
         v = random.choice(list(operation.keys()))
-        print("""Question: {}
-Your answer: """.format(v), end='')
-        answer = input()
+        print('Question: {}'.format(v))
+        answer = prompt.string('Your answer: ')
         if answer == str(operation[v]):
             count += 1
             print('Correct!')

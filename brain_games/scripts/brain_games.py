@@ -25,6 +25,11 @@ def welcome_progres():
     print('')
 
 
+def welcome_prime():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print('')
+
+
 def main():
     greeting()
     welcome_even()

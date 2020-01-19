@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import random
+import prompt
 
 
 def even(x):
@@ -13,9 +14,8 @@ def even(x):
     count = 0
     i = 1
     while i <= 3:
-        print("""Question: {}
-Your answer: """.format(di.get(i)), end='')
-        answer = input()
+        print('Question: {}'.format(di.get(i)))
+        answer = prompt.string('Your answer: ')
         if answer == is_even(di.get(i)):
             count += 1
             print('Correct!')
