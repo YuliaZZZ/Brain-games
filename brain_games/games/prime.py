@@ -19,19 +19,19 @@ def is_prime(n):
 
 
 def prime(name):
-    di = {1: randint(1, 3000), 2: randint(1, 3000), 3: randint(1, 3000)}
-    count = 0
+    items = {1: randint(1, 3000), 2: randint(1, 3000), 3: randint(1, 3000)}
+    counter = 0
     i = 1
     while i <= 3:
-        print('Question: {}'.format(di[i]))
+        print('Question: {}'.format(items[i]))
         answer = prompt.string('Your answer: ')
-        if answer == is_prime(di[i]):
-            count += 1
+        if answer == is_prime(items[i]):
+            counter += 1
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}!""".format(answer, is_prime(di[i]), name))
+Let's try again, {}!""".format(answer, is_prime(items[i]), name))
             break
         i += 1
-        if count == 3:
+        if counter == 3:
             print('Congratulations, {}!'.format(name))

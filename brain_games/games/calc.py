@@ -4,32 +4,33 @@ from operator import sub, mul
 import prompt
 
 
-def calc(x):
-    di = {
+def calc(name):
+    items = {
        1: [random.randint(1, 10), random.randint(1, 10)],
        2: [random.randint(1, 10), random.randint(1, 10)],
        3: [random.randint(1, 10), random.randint(1, 10)]
        }
-    count = 0
+    counter = 0
     i = 1
     while i <= 3:
-        operation = {
-                  '{} + {}'.format(di[i][0], di[i][1]): sum(di[i]),
-                  '{} - {}'.format(di[i][0], di[i][1]):
-                  sub(di[i][0], di[i][1]),
-                  '{} * {}'.format(di[i][0], di[i][1]): mul(di[i][0], di[i][1])
+        operations = {
+                  '{} + {}'.format(items[i][0], items[i][1]): sum(items[i]),
+                  '{} - {}'.format(items[i][0], items[i][1]):
+                  sub(items[i][0], items[i][1]),
+                  '{} * {}'.format(items[i][0], items[i][1]):
+                  mul(items[i][0], items[i][1])
                   }
-        v = random.choice(list(operation.keys()))
-        print('Question: {}'.format(v))
+        сhoice_operator = random.choice(list(operations.keys()))
+        print('Question: {}'.format(сhoice_operator))
         answer = prompt.string('Your answer: ')
-        if answer == str(operation[v]):
-            count += 1
+        if answer == str(operations[сhoice_operator]):
+            counter += 1
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}!""".format(answer, operation[v], x))
+Let's try again, {}!""".format(answer, operations[сhoice_operator], name))
             break
         i += 1
-    if count == 3:
-        print('Congratulations, {}!'.format(x))
+    if counter == 3:
+        print('Congratulations, {}!'.format(name))
         print('')

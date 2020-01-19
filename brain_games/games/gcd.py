@@ -10,23 +10,23 @@ def is_nod(x):
 
 
 def is_gcd(name):
-    di = {
+    items = {
        1: [random.randint(1, 100), random.randint(1, 10)],
        2: [random.randint(1, 100), random.randint(1, 10)],
        3: [random.randint(1, 100), random.randint(1, 10)]
        }
-    count = 0
+    counter = 0
     i = 1
     while i <= 3:
-        print('Question: {} {}'.format(di[i][0], di[i][1]))
+        print('Question: {} {}'.format(items[i][0], items[i][1]))
         answer = prompt.string('Your answer: ')
-        if answer == str(is_nod(di[i])):
-            count += 1
+        if answer == str(is_nod(items[i])):
+            counter += 1
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}!""".format(answer, is_nod(di[i]), name))
+Let's try again, {}!""".format(answer, is_nod(items[i]), name))
             break
         i += 1
-        if count == 3:
+        if counter == 3:
             print('Congratulations, {}!'.format(name))

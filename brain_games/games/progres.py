@@ -5,16 +5,16 @@ import prompt
 
 
 def make_progression():
-    z = randint(0, 9)
+    number = randint(0, 9)
     progress = list(islice(count(randint(1, 10), randint(1, 10)), 10))
-    y = progress[z]
-    progress[z] = '..'
+    secret_elem = progress[number]
+    progress[number] = '..'
     a, a1, a2, a3, a4, a5, a6, a7, a8, a9 = progress
     progression = (
             '{}, {}, {}, {}, {}, {}, {}, {}, {}, {}'.
             format(a, a1, a2, a3, a4, a5, a6, a7, a8, a9))
     print(progression)
-    return str(y)
+    return str(secret_elem)
 
 
 def progres(name):
