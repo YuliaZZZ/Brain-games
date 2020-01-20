@@ -6,10 +6,13 @@ classifiers = [
   "Topic :: Game development"
 ]
 authors = ["Zula <zinowiewa@yandex.ru>"]
-repository = ["<https://github.com/YuliaZZZ/python-project-lvl1>"]
 packages = [
     { include = "brain_games" },
   ]
+
+[[tool.poetry.source]] 
+name =  'private' 
+url =  'https://github.com/YuliaZZZ/python-project-lvl1'
 
 [tool.poetry.dependencies]
 python = "^3.6"
