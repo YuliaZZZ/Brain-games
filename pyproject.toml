@@ -6,7 +6,6 @@ classifiers = [
   "Topic :: Game development"
 ]
 authors = ["Zula <zinowiewa@yandex.ru>"]
-documentation = [<https://github.com/YuliaZZZ/python-project-lvl1>]
 packages = [
     { include = "brain_games" },
   ]
