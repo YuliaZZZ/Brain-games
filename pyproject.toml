@@ -10,6 +10,10 @@ packages = [
     { include = "brain_games" },
   ]
 
+[[tool.poetry.source]] 
+name =  'private' 
+url =  'https://github.com/YuliaZZZ/python-project-lvl1'
+
 [tool.poetry.dependencies]
 python = "^3.6"
 prompt = "^0.4.1"
