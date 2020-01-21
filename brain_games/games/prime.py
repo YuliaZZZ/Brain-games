@@ -21,19 +21,5 @@ def is_prime(n):
 items = {1: randint(1, 3000), 2: randint(1, 3000), 3: randint(1, 3000)}
 
 
-def prime(name):
-    counter = 0
-    i = 1
-    while i <= 3:
-        print('Question: {}'.format(items[i]))
-        answer = prompt.string('Your answer: ')
-        if answer == is_prime(items[i]):
-            counter += 1
-            print('Correct!')
-        else:
-            print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}!""".format(answer, is_prime(items[i]), name))
-            break
-        i += 1
-        if counter == 3:
-            print('Congratulations, {}!'.format(name))
+def prime(name, func, func2):
+    return func(name, func2)
