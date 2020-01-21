@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import random
+from random import randint
 from math import gcd
 import prompt
 
@@ -9,12 +9,14 @@ def is_nod(x):
     return gcd(a, b)
 
 
+items = {
+      1: [randint(1, 100), randint(1, 10)],
+      2: [randint(1, 100), randint(1, 10)],
+      3: [randint(1, 100), randint(1, 10)]
+      }
+
+
 def is_gcd(name):
-    items = {
-       1: [random.randint(1, 100), random.randint(1, 10)],
-       2: [random.randint(1, 100), random.randint(1, 10)],
-       3: [random.randint(1, 100), random.randint(1, 10)]
-       }
     counter = 0
     i = 1
     while i <= 3:

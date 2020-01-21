@@ -18,8 +18,10 @@ def is_prime(n):
     return 'yes'
 
 
+items = {1: randint(1, 3000), 2: randint(1, 3000), 3: randint(1, 3000)}
+
+
 def prime(name):
-    items = {1: randint(1, 3000), 2: randint(1, 3000), 3: randint(1, 3000)}
     counter = 0
     i = 1
     while i <= 3:
