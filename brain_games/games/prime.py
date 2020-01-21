@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from random import randint
 from math import gcd
-import prompt
 
 
 def is_prime(n):

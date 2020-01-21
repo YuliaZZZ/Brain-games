@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from random import randint
-import prompt
 
 
 def is_even(x):
@@ -10,5 +9,5 @@ def is_even(x):
 items = {1: randint(1, 10), 2: randint(1, 100), 3: randint(1, 1000)}
 
 
-def even(name,func, func2):
+def even(name, func, func2):
     return func(name, func2)
