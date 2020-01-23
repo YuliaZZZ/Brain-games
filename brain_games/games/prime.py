@@ -17,8 +17,6 @@ def is_prime(n):
     return 'yes'
 
 
-items = {1: randint(1, 3000), 2: randint(1, 3000), 3: randint(1, 3000)}
-
-
-def prime(name, func, func2):
-    return func(name, func2)
+def prime():
+    question = randint(1, 3000)
+    return [question, is_prime(question)]

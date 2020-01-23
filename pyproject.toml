@@ -1,10 +1,8 @@
 [tool.poetry]
 name = "YuliaZZZ_brain_games"
-version = "0.7.1"
-description = ""
-classifiers = [
-  "Topic :: Game development"
-]
+version = "0.7.2"
+description = "Brain games"
+classifiers = ["Topic :: Games/Entertainment"]
 authors = ["Zula <zinowiewa@yandex.ru>"]
 packages = [
     { include = "brain_games" },
