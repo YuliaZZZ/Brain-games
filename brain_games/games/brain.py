@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
 import prompt
-from .prime import items
 
 
-def brain(name, func):
+def engine(name, func):
+    x = 0
     counter = 0
     i = 1
     while i <= 3:
-        print('Question: {}'.format(items[i]))
+        x = func()
+        print('Question: {}'.format(x[0]))
         answer = prompt.string('Your answer: ')
-        if answer == func(items[i]):
+        if answer == x[1]:
             counter += 1
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}!""".format(answer, func(items[i]), name))
+Let's try again, {}!""".format(answer, x[1], name))
             break
         i += 1
         if counter == 3:
