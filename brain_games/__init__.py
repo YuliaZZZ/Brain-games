@@ -1,4 +1,1 @@
-from .games import *
-
-
-__all__ = ('games', 'engine', 'cli')
+from .games import *  # noqa: F401,F403
