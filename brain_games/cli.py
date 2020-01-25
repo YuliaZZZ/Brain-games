@@ -2,7 +2,10 @@
 import prompt
 
 
-def run():
+def run(func):
+    print('Welcome to the Brain Games!')
+    print(func()[2])
+    print('')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('')

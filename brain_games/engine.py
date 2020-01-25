@@ -4,7 +4,6 @@ import prompt
 
 
 def engine(func):
-    print('Welcome to the Brain Games!')
     name = run(func)
     counter = 0
     i = 1
