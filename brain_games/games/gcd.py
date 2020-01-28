@@ -1,14 +1,22 @@
-#!/usr/bin/env python3
 from random import randint
-from math import gcd
 
 
-def is_nod(x):
-    a, b = x
-    return gcd(a, b)
+welcome = 'Find the greatest common divisor of given numbers.'
 
 
-def is_gcd():
-    items = [randint(1, 100), randint(1, 100)]
-    question = '{} {}'.format(items[0], items[1])
-    return [question, str(is_nod(items))]
+def func():
+    def gcd_check(x, y):
+        s = [x, y]
+        s.sort()
+        a, b = s
+        if b % a == 0:
+            return a
+        i = a
+        while i >= 1:
+            if b % i == 0 and a % i == 0:
+                return i
+            i -= 1
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    question = '{} {}'.format(number1, number2)
+    return question, str(gcd_check(number1, number2))

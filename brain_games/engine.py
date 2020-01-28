@@ -1,23 +1,20 @@
-#!/usr/bin/env python3
-from .cli import run
+from brain_games.cli import welcome_user
 import prompt
 
 
-def engine(func):
-    name = run(func)
-    counter = 0
+def engine(module):
+    name = welcome_user(module.welcome)
     i = 1
     while i <= 3:
-        x = func()
-        print('Question: {}'.format(x[0]))
+        question, chek_question = module.func()
+        print('Question: {}'.format(question))
         answer = prompt.string('Your answer: ')
-        if answer == x[1]:
-            counter += 1
+        if answer == chek_question:
             print('Correct!')
         else:
             print("""'{}' is wrong answer :(.Correct answer was '{}'.
-Let's try again, {}!""".format(answer, x[1], name))
+Let's try again, {}!""".format(answer, chek_question, name))
             break
         i += 1
-        if counter == 3:
-            print('Congratulations, {}!'.format(name))
+    else:
+        print('Congratulations, {}!'.format(name))
