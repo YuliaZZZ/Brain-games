@@ -21,4 +21,5 @@ def func():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     question = '{} {}'.format(number1, number2)
-    return question, str(gcd_check(number1, number2))
+    answer = str(gcd_check(number1, number2))
+    return question, answer

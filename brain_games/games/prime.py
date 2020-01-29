@@ -20,4 +20,5 @@ welcome = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def func():
     question = randint(1, 3000)
-    return question, prime_check(question)
+    answer = prime_check(question)
+    return question, answer
