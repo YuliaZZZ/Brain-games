@@ -1,7 +1,7 @@
 from random import randint
 
 
-welcome = 'Answer "yes" if number even otherwise answer "no".'
+WELCOME = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def even_check(x):

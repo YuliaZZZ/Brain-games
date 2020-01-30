@@ -15,7 +15,7 @@ def prime_check(n):
     return 'yes'
 
 
-welcome = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def func():

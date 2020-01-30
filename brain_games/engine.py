@@ -3,7 +3,7 @@ import prompt
 
 
 def engine(module):
-    name = welcome_user(module.welcome)
+    name = welcome_user(module.WELCOME)
     i = 1
     while i <= 3:
         question, chek_question = module.func()

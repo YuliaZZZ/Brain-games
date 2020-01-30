@@ -1,7 +1,7 @@
 from random import randint
 
 
-welcome = 'Find the greatest common divisor of given numbers.'
+WELCOME = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd_check(x, y):

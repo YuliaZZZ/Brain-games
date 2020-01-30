@@ -2,7 +2,7 @@ from random import randint
 from itertools import islice, count
 
 
-welcome = 'What number is missing in the progression?'
+WELCOME = 'What number is missing in the progression?'
 
 
 def func():

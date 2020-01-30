@@ -2,7 +2,7 @@ from random import randint, choice
 from operator import sub, mul
 
 
-welcome = 'What is the result of the expression?'
+WELCOME = 'What is the result of the expression?'
 
 
 def func():
