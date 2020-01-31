@@ -5,9 +5,11 @@ from itertools import islice, count
 WELCOME = 'What number is missing in the progression?'
 
 
-def func():
+PROGRESSION_SIZE = 10
+
+
+def generation():
     number = randint(0, 9)
-    PROGRESSION_SIZE = 10
     progression = list(islice(count(
                 start=randint(10, 50),
                 step=randint(1, 10)),

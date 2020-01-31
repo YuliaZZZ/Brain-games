@@ -18,7 +18,7 @@ def prime_check(n):
 WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def func():
+def generation():
     question = randint(1, 3000)
     answer = prime_check(question)
     return question, answer

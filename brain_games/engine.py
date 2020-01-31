@@ -3,10 +3,10 @@ import prompt
 
 
 def engine(module):
-    name = welcome_user(module.WELCOME)
+    name = welcome_user(module)
     i = 1
     while i <= 3:
-        question, chek_question = module.func()
+        question, chek_question = module.generation()
         print('Question: {}'.format(question))
         answer = prompt.string('Your answer: ')
         if answer == chek_question:

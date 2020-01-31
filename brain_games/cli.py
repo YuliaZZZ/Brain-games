@@ -1,9 +1,9 @@
 import prompt
 
 
-def welcome_user(WELCOME):
+def welcome_user(module):
     print('Welcome to the Brain Games!')
-    print(WELCOME)
+    print(module.WELCOME)
     print('')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
