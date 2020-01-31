@@ -16,9 +16,10 @@ def generation():
                 PROGRESSION_SIZE))
     secret_elem = progression[number]
     progression[number] = '..'
-    a, a1, a2, a3, a4, a5, a6, a7, a8, a9 = progression
-    question = (
-            '{}, {}, {}, {}, {}, {}, {}, {}, {}, {}'.
-            format(a, a1, a2, a3, a4, a5, a6, a7, a8, a9))
+    for i, _ in enumerate(progression):
+        if i < 9:
+            progression[i] = str(progression[i]) + ', '
+        progression[i] = str(progression[i])
+    question = ''.join(progression)
     answer = str(secret_elem)
     return question, answer
