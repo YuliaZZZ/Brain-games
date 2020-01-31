@@ -15,5 +15,5 @@ def func():
                )
     symbol, operation = choice(OPERATIONS)
     question = '{} {} {}'.format(number1, symbol, number2)
-    answer = str(operation(number1, number2))
-    return question, answer
+    answer = operation(number1, number2)
+    return question, str(answer)
