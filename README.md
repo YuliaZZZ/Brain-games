@@ -1,4 +1,3 @@
-# python-project-lvl1
 # BRAIN GAMES
 <a href="https://codeclimate.com/github/YuliaZZZ/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/0feb08888d8d0fd17a8c/maintainability" /></a>
 <a href="https://codeclimate.com/github/YuliaZZZ/python-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/0feb08888d8d0fd17a8c/test_coverage" /></a>
